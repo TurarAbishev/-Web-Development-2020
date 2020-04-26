@@ -1,0 +1,182 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+header{
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+header #logo{
+    color: white;
+    cursor: pointer;
+}
+header #logo span{
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+}
+@media (min-wigth: 701px){
+    #logo{
+        float: left;
+        width: 30%;
+        font-size: 1.1em;
+    }
+    #about{
+        float: right;
+        width: 67%;
+    }
+}
+@media (max-wigth: 700px){
+    #logo{
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.5em;
+    }
+    
+    #about{
+        float: left;
+        width: 100%;
+    }
+}
+#about{
+    text-align: center;
+    font-size: 1em;
+    line-height: 0;
+    margin-bottom: 10px;
+}
+#about > a{color: #ffffff;}
+#about > a:hover{
+    color: rgb(245, 231, 231);
+    text-decoration: underline;
+}
+#about > a:not(:last-child){
+    margin-right: 10%;
+}
+.fixed{
+    z-index: 5000;
+    background-color: #ffffff;
+    border-bottom: 1px solid silver;
+}
+header.fixed #logo{
+    color: #333;
+}
+.fixed #about a {color: #535050}
+.fixed #about a:hover{color:#dbae94}
+
+*,
+*:before
+*:after
+{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 1200pxt;
+    margin: 0 auto;
+}
+.intro{
+    width: 100%;
+    height: 100vh;
+
+}
+.intro__inner{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+.nav{
+    text-transform: uppercase;
+}
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+.nav__link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(8, 8, 8);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.nav__link:hover{
+    color: #f56817;
+}
+.nav__link:hover:after{
+    display: block;
+}
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 1px 30px;
+
+    border: 3px solid #141414;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(34, 25, 15);
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    transition:background-color .1s linear, color .1s linear;
+}
+.btn:hover{
+    background-color: rgba(216, 12, 12, 0.753);
+    color: black;
+}
+#top{
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://s0.rbk.ru/v6_top_pics/media/img/5/06/755864368151065.jpg);
+    background-blend-mode: multiply;
+    background-color: #799bb7;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+}
+@media (min-width: 1001px){
+    #top{
+        font-size: 3em;
+    }
+}
+@media (max-width: 1000px) and (min-width:651px){
+    #top{
+        font-size: 2em;
+    }
+}
+@media (max-width: 650px){
+    #top{
+        font-size: 1em;
+        padding-top: 20%;
+    }
+}
+#top h1{
+    padding-top: 20%;
+}
+#stats{
+    text-align: center;
+}
